@@ -1,0 +1,54 @@
+@import "./components/navbar.css";
+@import "./blog/index.css";
+
+:root {
+    --primary: #58cef8;
+    --secondary: #375e70;
+
+    --link: #d4a4c0;
+    --link-hover: #cc7eae;
+
+    --background: #2c2c3a;
+    --background-text: #eef4f9;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: sans-serif;
+    background-color: var(--background);   
+    color: var(--background-text);
+}
+
+a, a:visited {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+#entrypoint {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+.maincontent {
+    padding: 1em;
+}
+
+.maincontent > * {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 50em) {
+    #entrypoint {
+        flex-direction: column;
+    }
+}

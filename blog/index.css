@@ -1,0 +1,20 @@
+.post {
+    margin: 2em 0;
+}
+
+.tag {
+    background-color: var(--link-hover);
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    padding: 0.25em;
+}
+
+.tag > a {
+    color: var(--background-text) !important; /* Yeah, I did it. I used the forbidden statement. So what? */
+}
+
+.tag:hover {
+    background-color: var(--link);
+}
