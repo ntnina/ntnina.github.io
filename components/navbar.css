@@ -1,11 +1,14 @@
 .navbar {
+    position: sticky;
+    top: 2em;
+
     display: flex;
     flex-direction: column;
     flex-grow: 0;
     text-align: center;
     align-items: center;
 
-    height: auto;
+    height: min-content;
     width: 10em;
 
     padding: 1em;
@@ -14,7 +17,15 @@
     border-radius: 20px;
 }
 
-.navbar a {
+.navbar > nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar > nav > a {
     font-size: 1.5em;
     font-weight: bold;
     padding-top: 0.5em;
@@ -22,13 +33,24 @@
 
 @media only screen and (max-width: 50em) {
     .navbar {
-        height: min-content;
+        position: inherit;
         width: min-content;
         flex-direction: row;
     }
 
-    .navbar > a {
+    .navbar > nav {
+        flex-direction: row;
+    }
+
+    .navbar > nav > a {
         margin-left: 1em;
         padding-top: 0;
     }
+}
+
+#profilepicture {
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--primary);
 }

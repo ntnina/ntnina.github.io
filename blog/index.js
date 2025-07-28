@@ -7,7 +7,9 @@ async function postutil(path) {
     
     return [post, `
         <div class="post">
-            ${post.tags.map(tag => `<div class="tag"><a href=".?${tag}">${tag}</a></div>`).join("")}
+            <div class="taglist">
+                ${post.tags.map(tag => `<div class="tag"><a href=".?${tag}">${tag}</a></div>`).join("")}
+            </div>
             <h3><a href="./view?${path}">${post.title}</a></h3>
             <p>${post.description}</p>
         </div>
@@ -15,7 +17,10 @@ async function postutil(path) {
 }
 
 const posts = [
+    await postutil("helloworld")
 ];
+
+const query = window.location.search.substring(1).replaceAll("%20", " ");
 
 export default `
 ${navbar}
@@ -23,7 +28,7 @@ ${navbar}
     ${
         window.location.search === "" 
             ? posts.map(post => post[1]).join("")
-            : posts.filter(post => post[0].tags.includes(window.location.search.substring(1)))
+            : posts.filter(post => post[0].tags.includes(query))
                 .map(post => post[1]).join("")
 
     }

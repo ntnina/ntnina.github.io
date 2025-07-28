@@ -2,6 +2,10 @@
     margin: 2em 0;
 }
 
+.taglist {
+    display: flex;
+}
+
 .tag {
     background-color: var(--link-hover);
     border-radius: 20px;
@@ -9,7 +13,11 @@
     font-weight: bold;
 
     padding: 0.25em;
+    margin: 0.25em;
+
+    width: max-content;
 }
+
 
 .tag > a {
     color: var(--background-text) !important; /* Yeah, I did it. I used the forbidden statement. So what? */

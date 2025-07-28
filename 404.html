@@ -3,20 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>404</title>
+        <title>Loading...</title>
         <link rel="stylesheet" href="/404.css">
+        <link rel="icon" type="image/png" href="https://github.com/ntnina.png">
     </head>
     <body>
         <div id="entrypoint"></div>
         <script type="module">
             const target = document.getElementById("entrypoint");
-            const fourOhFour = `<p>404</p>`;
             const location = window.location.pathname.replace(/\/+$/, '') || '/'; 
 
             const imp = (path) => {
-                import(path + "/index.js").then(ret => {
-                    target.innerHTML = ret.default ? ret.default : fourOhFour;
-                })
+                import(path + "/index.js")
+                    .then(ret => target.innerHTML = ret.default)
+                    .catch(_ => import("/404.js").then(fourOhFour => target.innerHTML = fourOhFour.default));
             }
 
             if (location === "/")
