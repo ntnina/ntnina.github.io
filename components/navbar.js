@@ -14,7 +14,7 @@ export default `
 
         <nav>
             <a href="/">Home</a>
-            <a href="/blog">Blog</a>
+            <a href="/blog">Blog</a><span id="rss">(<a href="https://github.com/ntnina/ntnina.github.io/commits/main.atom">feed</a>)</span>
         </nav>
     </div>
 `;
