@@ -3,7 +3,7 @@ import navbar from "../components/navbar.js";
 document.title = "Blog";
 
 async function postutil(path) {
-    const post = (await import(`/blog/content/${path}.js`)).default
+    const post = (await import(`/blog/content/${path}.js`)).default;
     
     return [post, `
         <div class="post">
@@ -17,7 +17,8 @@ async function postutil(path) {
 }
 
 const posts = [
-    await postutil("helloworld")
+    await postutil("helloworld"),
+    await postutil("badsite"),
 ];
 
 const query = window.location.search.substring(1).replaceAll("%20", " ");

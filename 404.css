@@ -2,13 +2,13 @@
 @import "./blog/index.css";
 
 :root {
-    --primary: #58cef8;
-    --secondary: #375e70;
+    --primary: #adc1c9;
+    --secondary: #505f66;
 
-    --link: #d4a4c0;
-    --link-hover: #cc7eae;
+    --link: #d4cba4;
+    --link-hover: #ccbe7e;
 
-    --background: #2c2c3a;
+    --background: #2c2c36;
     --background-text: #eef4f9;
 }
 

@@ -1,9 +1,9 @@
 import navbar from "../../components/navbar.js";
 
-document.title = "Blog";
-
 const postid = window.location.search.substring(1);
 const post = import(`/blog/content/${postid}.js`);
+
+document.title = (await post).default.title;
 
 export default `
 ${navbar}
