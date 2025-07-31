@@ -16,10 +16,12 @@ async function postutil(path) {
     `];
 }
 
-const posts = [
+const posts = ([
     await postutil("helloworld"),
     await postutil("badsite"),
-];
+    await postutil("finish-projects"),
+    await postutil("finish-projects-mean"),
+]).reverse();
 
 const query = window.location.search.substring(1).replaceAll("%20", " ");
 

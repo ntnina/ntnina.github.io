@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
 
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
 }
@@ -34,7 +36,7 @@
 @media only screen and (max-width: 50em) {
     .navbar {
         position: inherit;
-        width: min-content;
+        width: auto;
         flex-direction: row;
     }
 

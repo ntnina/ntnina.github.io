@@ -1,0 +1,13 @@
+.maincontent > article > code {
+    width: 80em;
+}
+
+.spoiler {
+    border-radius: 5px;
+    background-color: var(--background-text);
+    color: var(--background-text);
+}
+
+.spoiler:hover, .spoiler:active {
+    color: var(--background);
+}
