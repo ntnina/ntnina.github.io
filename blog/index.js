@@ -16,7 +16,7 @@ async function postutil(path) {
     `];
 }
 
-const posts = ([
+export const posts = ([
     await postutil("helloworld"),
     await postutil("badsite"),
     await postutil("finish-projects"),
