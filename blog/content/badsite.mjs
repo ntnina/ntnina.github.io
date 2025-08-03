@@ -10,7 +10,7 @@ export default {
     content: autosplit(`
 Last night something truly horrifying happened.
 
-I was called a web developer.
+I was called a web developer. 
 
 This made me think for a little bit. A lot of the things I work on are for friends who are wanting to build websites. But I don't actually build a lot of websites. And it shows...
 
