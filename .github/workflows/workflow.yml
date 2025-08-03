@@ -2,8 +2,6 @@ name: Preprocess website
 
 on:
   push:
-    paths:
-      - './blog/content/**'
       
 jobs:
   build:
