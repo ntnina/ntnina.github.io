@@ -1,0 +1,24 @@
+name: Preprocess website
+
+on:
+  push:
+    paths:
+      - './blog/content/**'
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v3
+      
+      - name: Generate RSS
+        run: node ./blog/rss/index.mjs
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./blog/rss/feed.xml
+          git commit -m "Autogen"
+          git push origin main
