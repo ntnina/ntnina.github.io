@@ -1,7 +1,7 @@
 import navbar from "../../components/navbar.js";
 
 const postid = window.location.search.substring(1);
-const post = import(`/blog/content/${postid}.js`);
+const post = import(`/blog/content/${postid}.mjs`);
 
 document.title = (await post).default.title;
 

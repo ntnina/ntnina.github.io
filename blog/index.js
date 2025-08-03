@@ -1,27 +1,22 @@
+import * as list from "./list.mjs";
+const posts = Object.values(list);
 import navbar from "../components/navbar.js";
 
-document.title = "Blog";
-
-async function postutil(path) {
-    const post = (await import(`/blog/content/${path}.js`)).default;
+function postutil(post) {
+    const filename = post.url.substring(post.url.lastIndexOf('/') + 1).replace(".mjs", "");
     
-    return [post, `
+    return `
         <div class="post">
             <div class="taglist">
                 ${post.tags.map(tag => `<div class="tag"><a href=".?${tag}">${tag}</a></div>`).join("")}
             </div>
-            <h3><a href="./view?${path}">${post.title}</a></h3>
+            <h3><a href="./view?${filename}">${post.title}</a></h3>
             <p>${post.description}</p>
         </div>
-    `];
+    `;
 }
 
-export const posts = ([
-    await postutil("helloworld"),
-    await postutil("badsite"),
-    await postutil("finish-projects"),
-    await postutil("finish-projects-mean"),
-]).reverse();
+document.title = "Blog";
 
 const query = window.location.search.substring(1).replaceAll("%20", " ");
 
@@ -30,10 +25,9 @@ ${navbar}
 <div class="maincontent">
     ${
         window.location.search === "" 
-            ? posts.map(post => post[1]).join("")
-            : posts.filter(post => post[0].tags.includes(query))
-                .map(post => post[1]).join("")
-
+            ? posts.reverse().map(post => postutil(post)).join("")
+            : posts.reverse().filter(post => post.tags.includes(query))
+                   .map(post => postutil(post)).join("")
     }
 </div>
 `; 
