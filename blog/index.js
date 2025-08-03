@@ -22,8 +22,8 @@ const query = window.location.search.substring(1).replaceAll("%20", " ");
 
 export default `
 ${navbar}
-<a href="/blog/rss/feed.xml">RSS Feed :)</a>
 <div class="maincontent">
+    <a href="/blog/rss/feed.xml">RSS Feed :)</a>
     ${
         window.location.search === "" 
             ? posts.reverse().map(post => postutil(post)).join("")
