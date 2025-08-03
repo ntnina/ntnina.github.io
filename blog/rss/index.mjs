@@ -20,12 +20,12 @@ const xml = `<?xml version="1.0" encoding="UTF-8" ?>
     <link>https://ntnina.github.io</link>
     <description>The mad ramblings of a silly lil girl</description>
     ${posts.map(post => `
-        <item>
-            <title>${sanitise(post.title)}</title>
-            <link>https://ntnina.github.io/blog/view?${post.url.substring(post.url.lastIndexOf('/') + 1).replace(".mjs", "")}</link>
-            <description>${sanitise(post.description)}</description>
-            <pubDate>${new Date(post.datetime).toUTCString()}</pubDate>
-        </item>`
+    <item>
+        <title>${sanitise(post.title)}</title>
+        <link>https://ntnina.github.io/blog/view?${post.url.substring(post.url.lastIndexOf('/') + 1).replace(".mjs", "")}</link>
+        <description>${sanitise(post.description)}</description>
+        <pubDate>${new Date(post.datetime).toUTCString()}</pubDate>
+    </item>`
     ).join("").trim()}
 </channel>
 
