@@ -6,29 +6,29 @@
     <link>https://ntnina.github.io</link>
     <description>The mad ramblings of a silly lil girl</description>
     <item>
-            <title>How to finish projects&amp;trade;, £15.99 edition</title>
-            <link>https://ntnina.github.io/blog/view?finishprojectsmean</link>
-            <description>My original musings on productivity - this is the mean version for people who like tough love. See &lt;a href=&quot;/blog/view?finishprojects&quot;&gt;here&lt;/a&gt; for a nicer version.</description>
-            <pubDate>Thu, 31 Jul 2025 19:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title>How to finish projects - the &quot;cure to laziness&quot;&amp;trade;, now only $2.99</title>
-            <link>https://ntnina.github.io/blog/view?finishprojects</link>
-            <description>A deep dive into a very lazy person&apos;s method of getting herself to be less lazy - this is the cleaner, nicer, version. See &lt;a href=&quot;/blog/view?finishprojectsmean&quot;&gt;here&lt;/a&gt; for the &lt;em&gt;slightly&lt;/em&gt; mean version.</description>
-            <pubDate>Thu, 31 Jul 2025 15:14:00 GMT</pubDate>
-        </item>
-        <item>
-            <title>Why this website is bad</title>
-            <link>https://ntnina.github.io/blog/view?badsite</link>
-            <description>A discussion on my woes with frontend frameworks and web development and how I built this site.</description>
-            <pubDate>Mon, 28 Jul 2025 19:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title>Hello World!</title>
-            <link>https://ntnina.github.io/blog/view?helloworld</link>
-            <description>The &lt;del&gt;first&lt;/del&gt; third post on the blog!</description>
-            <pubDate>Mon, 28 Jul 2025 19:00:00 GMT</pubDate>
-        </item>
+        <title>How to finish projects&amp;trade;, £15.99 edition</title>
+        <link>https://ntnina.github.io/blog/view?finishprojectsmean</link>
+        <description>My original musings on productivity - this is the mean version for people who like tough love. See &lt;a href=&quot;/blog/view?finishprojects&quot;&gt;here&lt;/a&gt; for a nicer version.</description>
+        <pubDate>Thu, 31 Jul 2025 19:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>How to finish projects - the &quot;cure to laziness&quot;&amp;trade;, now only $2.99</title>
+        <link>https://ntnina.github.io/blog/view?finishprojects</link>
+        <description>A deep dive into a very lazy person&apos;s method of getting herself to be less lazy - this is the cleaner, nicer, version. See &lt;a href=&quot;/blog/view?finishprojectsmean&quot;&gt;here&lt;/a&gt; for the &lt;em&gt;slightly&lt;/em&gt; mean version.</description>
+        <pubDate>Thu, 31 Jul 2025 15:14:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>Why this website is bad</title>
+        <link>https://ntnina.github.io/blog/view?badsite</link>
+        <description>A discussion on my woes with frontend frameworks and web development and how I built this site.</description>
+        <pubDate>Mon, 28 Jul 2025 19:00:00 GMT</pubDate>
+    </item>
+    <item>
+        <title>Hello World!</title>
+        <link>https://ntnina.github.io/blog/view?helloworld</link>
+        <description>The &lt;del&gt;first&lt;/del&gt; third post on the blog!</description>
+        <pubDate>Mon, 28 Jul 2025 19:00:00 GMT</pubDate>
+    </item>
 </channel>
 
 </rss>
