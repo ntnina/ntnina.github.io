@@ -6,6 +6,12 @@
     <link>https://ntnina.github.io</link>
     <description>The mad ramblings of a silly lil girl</description>
     <item>
+        <title>The internet is rubbish! Let&apos;s reclaim it.</title>
+        <link>https://ntnina.github.io/blog/view?reclaiminternet</link>
+        <description>A ramble about the modern state of the internet, and a way to reverse brainrot.</description>
+        <pubDate>Mon, 04 Aug 2025 19:56:00 GMT</pubDate>
+    </item>
+    <item>
         <title>How to finish projects&amp;trade;, £15.99 edition</title>
         <link>https://ntnina.github.io/blog/view?finishprojectsmean</link>
         <description>My original musings on productivity - this is the mean version for people who like tough love. See &lt;a href=&quot;/blog/view?finishprojects&quot;&gt;here&lt;/a&gt; for a nicer version.</description>
@@ -27,7 +33,7 @@
         <title>Hello World!</title>
         <link>https://ntnina.github.io/blog/view?helloworld</link>
         <description>The &lt;del&gt;first&lt;/del&gt; third post on the blog!</description>
-        <pubDate>Mon, 28 Jul 2025 19:00:00 GMT</pubDate>
+        <pubDate>Mon, 28 Jul 2025 18:00:00 GMT</pubDate>
     </item>
 </channel>
 
