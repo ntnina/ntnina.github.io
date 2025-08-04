@@ -1,5 +1,5 @@
 import * as list from "./list.mjs";
-const posts = Object.values(list);
+const posts = Object.values(list).sort((a, b) => new Date(a.datetime) - new Date(b.datetime));
 import navbar from "../components/navbar.js";
 
 function postutil(post) {
@@ -8,7 +8,7 @@ function postutil(post) {
     return `
         <div class="post">
             <div class="taglist">
-                ${post.tags.map(tag => `<div class="tag"><a href=".?${tag}">${tag}</a></div>`).join("")}
+                ${post.tags.sort().map(tag => `<div class="tag"><a href=".?${tag}">${tag}</a></div>`).join("")}
             </div>
             <h3><a href="./view?${filename}">${post.title}</a></h3>
             <p>${post.description}</p>

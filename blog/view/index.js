@@ -10,7 +10,7 @@ ${navbar}
 
 <div class="maincontent">
     <div class="taglist">
-        ${(await post).default.tags.map(tag => `<div class="tag"><a href="../?${tag}">${tag}</a></div>`).join("")}
+        ${(await post).default.tags.sort().map(tag => `<div class="tag"><a href="../?${tag}">${tag}</a></div>`).join("")}
     </div>
     <p>Posted: ${(await post).default.datetime} - Last edited: ${(await post).default.edited}</p>
     <h2>${(await post).default.title}</h2>
